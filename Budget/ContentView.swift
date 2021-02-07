@@ -12,21 +12,12 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading , content: {
             HStack(content: {
-                Text("Amount")
+                Text(expense.date.asDateString(as: .fullDate))
                 Text(expense.amount.asCurrency)
                     .font(.headline)
                     .foregroundColor(.red)
             })
-            
-            HStack(content: {
-                Text("Date")
-                Text(expense.date.asDateString(as: .fullDate))
-            })
-            
-            HStack(content: {
-                Text(expense.allTypes)
-            })
-           
+            Text(expense.allTypes)
         })
         
     }

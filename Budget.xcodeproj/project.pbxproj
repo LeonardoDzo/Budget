@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7DBE2EB25D06CD800B8D4E7 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBE2EA25D06CD800B8D4E7 /* Expense.swift */; };
+		F7DBE2F325D06D9300B8D4E7 /* Expense+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBE2F225D06D9300B8D4E7 /* Expense+Type.swift */; };
+		F7DBE2F825D06E8B00B8D4E7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBE2F725D06E8B00B8D4E7 /* Person.swift */; };
+		F7DBE2FE25D0715400B8D4E7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBE2FD25D0715400B8D4E7 /* Date.swift */; };
+		F7DBE30325D071D900B8D4E7 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBE30225D071D900B8D4E7 /* Int.swift */; };
+		F7DBE30825D0736000B8D4E7 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DBE30725D0736000B8D4E7 /* Double.swift */; };
 		F7FAAE4F25D068F5009DD0D9 /* BudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAAE4E25D068F5009DD0D9 /* BudgetApp.swift */; };
 		F7FAAE5125D068F5009DD0D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAAE5025D068F5009DD0D9 /* ContentView.swift */; };
 		F7FAAE5325D068F6009DD0D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FAAE5225D068F6009DD0D9 /* Assets.xcassets */; };
@@ -33,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7DBE2EA25D06CD800B8D4E7 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		F7DBE2F225D06D9300B8D4E7 /* Expense+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+Type.swift"; sourceTree = "<group>"; };
+		F7DBE2F725D06E8B00B8D4E7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F7DBE2FD25D0715400B8D4E7 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F7DBE30225D071D900B8D4E7 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		F7DBE30725D0736000B8D4E7 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F7FAAE4B25D068F5009DD0D9 /* Budget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FAAE4E25D068F5009DD0D9 /* BudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetApp.swift; sourceTree = "<group>"; };
 		F7FAAE5025D068F5009DD0D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +84,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7DBE2E925D06C9600B8D4E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DBE2EA25D06CD800B8D4E7 /* Expense.swift */,
+				F7DBE2F225D06D9300B8D4E7 /* Expense+Type.swift */,
+				F7DBE2F725D06E8B00B8D4E7 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7DBE2FC25D0714400B8D4E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7DBE2FD25D0715400B8D4E7 /* Date.swift */,
+				F7DBE30225D071D900B8D4E7 /* Int.swift */,
+				F7DBE30725D0736000B8D4E7 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F7FAAE4225D068F5009DD0D9 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +127,8 @@
 		F7FAAE4D25D068F5009DD0D9 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				F7DBE2FC25D0714400B8D4E7 /* Extensions */,
+				F7DBE2E925D06C9600B8D4E7 /* Model */,
 				F7FAAE4E25D068F5009DD0D9 /* BudgetApp.swift */,
 				F7FAAE5025D068F5009DD0D9 /* ContentView.swift */,
 				F7FAAE5225D068F6009DD0D9 /* Assets.xcassets */,
@@ -259,7 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DBE2F825D06E8B00B8D4E7 /* Person.swift in Sources */,
+				F7DBE2FE25D0715400B8D4E7 /* Date.swift in Sources */,
+				F7DBE30825D0736000B8D4E7 /* Double.swift in Sources */,
+				F7DBE2EB25D06CD800B8D4E7 /* Expense.swift in Sources */,
+				F7DBE30325D071D900B8D4E7 /* Int.swift in Sources */,
 				F7FAAE5125D068F5009DD0D9 /* ContentView.swift in Sources */,
+				F7DBE2F325D06D9300B8D4E7 /* Expense+Type.swift in Sources */,
 				F7FAAE4F25D068F5009DD0D9 /* BudgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

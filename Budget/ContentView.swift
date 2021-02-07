@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    var expense: Expense
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading , content: {
+            HStack(content: {
+                Text("Amount")
+                Text(expense.amount.asCurrency)
+                    .font(.headline)
+                    .foregroundColor(.red)
+            })
+            
+            HStack(content: {
+                Text("Date")
+                Text(expense.date.asDateString(as: .fullDate))
+            })
+            
+            HStack(content: {
+                Text(expense.allTypes)
+            })
+           
+        })
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(expense: .default)
     }
 }
